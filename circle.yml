@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: 6.11.0
+
+dependencies:
+  override:
+    - nvm install 6
+    - npm install
+    - npm install webpack -g
+    - npm i prop-types
+#    - webpack
+
+deployment:
+  production:
+    branch: master
+#    commands:
+#      - webpack --config webpack.config.js
+
+    heroku:
+      appname: pokemon-battling-application
